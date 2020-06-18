@@ -9,6 +9,7 @@
 User.destroy_all
 Event.destroy_all
 Dish.destroy_all
+Review.destroy_all
 
 
 #Customers
@@ -35,4 +36,12 @@ d6 = Dish.create(name: "Greasy Hamburger", user: c1 , cuisine: "American", descr
 
 e1 = Event.create(party_size: 2, chef: c1, customer_id: u1.id, date: Date.new(2009,10,9) , ocassion: "Anniversary", dish_name: "Arancini con Queso")
 e2 = Event.create(party_size: 4, chef: c3, customer_id: u2.id, date: Date.new(2009,10,20) , ocassion: "Birthday", dish_name: "Greasy Hamburger")
-e3 = Event.create(party_size: 3, chef: c2, customer_id: u1.id, date: Date.new(2009,11,19) , ocassion: "Baptism", dish_name: "Sushi")
+e3 = Event.create(party_size: 3, chef: c3, customer_id: u1.id, date: Date.new(2009,11,19) , ocassion: "Baptism", dish_name: "Sushi")
+
+
+#Reviews 
+
+r1 = Review.create(title: "Too Expensive", content: "Food was okay", date: Date.new(2020,9,6), rating: 3, event_id: e3.id, user_id: u1.id)
+r2 = Review.create(title: "Chef Beza was excellent", content: "I loved it", date: Date.new(2020,06,1),rating: 4, event_id: e2.id, user_id: u2.id )
+r3 = Review.create(title: "My Second Review", content: "Food Delicious", date: Date.new(2020,06,1),rating: 5, event_id: e2.id, user_id: c3.id )
+r5 = Review.create(title: "Not such a clean kitchen", content: "The kitchen was a mess, no tools were provided", date: Date.new(2020,06,1),rating: 5, event_id: e3.id, user_id: c3.id )
