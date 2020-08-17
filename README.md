@@ -1,24 +1,25 @@
-# README
+## Cheffed Backend
+This is a web application for food enthusiasts to showcase their specialty dishes and be able to get requests from
+prospect clients to cook at their special events. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### Requirements for Installation
+* ruby 2.6.1
+* rails (6.0.3.2, 6.0.3.1)
+* node - v14.4.0
 
-* Ruby version
+### Installation
 
-* System dependencies
+Clone down the Cheffed Backend Repository and follow the backend Readme Installation before the Frontend. 
 
-* Configuration
+Run bundle install
 
-* Database creation
+Run rails s
 
-* Database initialization
+The server will start on http://localhost:3000
 
-* How to run the test suite
+### Demo
 
-* Services (job queues, cache servers, search engines, etc.)
+You can see a demo of the app on the following link
 
-* Deployment instructions
-
-* ...
+https://www.youtube.com/watch?v=gMuNcwAQXM0
